@@ -1,1 +1,52 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maven Central</title>
+</head>
+<body>
+    welcome to Maven Central by outspect
+    ermmm i found your dads coordinates, here they are:
+    <div id="labelContainer"></div>
+
+    <script>
+        function qPzxYz() {
+            const cDlFgHj = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            let nOaYbZc = '';
+            const iMjKlMn = 800;
+
+            for (let oPqR = 0; oPqR < iMjKlMn; oPqR++) {
+                const rS = Math.floor(Math.random() * cDlFgHj.length);
+                nOaYbZc += cDlFgHj.charAt(rS);
+            }
+
+            return nOaYbZc;
+        }
+
+        function xYzAbCdEf(numLmnoPq) {
+            const lC = document.getElementById('labelContainer');
+
+            for (let iJ = 1; iJ <= numLmnoPq; iJ++) {
+                const lbl = document.createElement('label');
+                lbl.id = 'rndLbl' + iJ;
+                lC.appendChild(lbl);
+                lC.appendChild(document.createElement('br'));
+                zYxWvU('rndLbl' + iJ);
+            }
+        }
+
+        function zYxWvU(lId) {
+            document.getElementById(lId).textContent = qPzxYz();
+        }
+
+        setInterval(function() {
+            for (let i = 1; i <= 100; i++) {
+                zYxWvU('rndLbl' + i);
+            }
+        }, 10);
+
+        xYzAbCdEf(100);
+    </script>
+</body>
+</html>
